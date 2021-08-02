@@ -64,4 +64,5 @@ And('I verify the AlarmAction as 1 in Information window of Acknowledge Alarm',f
 })
 Then('I click on close button in Information window of Acknowledge Alarm', function(){
     Acknowledgealarm.getclose().click()
+    cy.wait(40000)
 })
