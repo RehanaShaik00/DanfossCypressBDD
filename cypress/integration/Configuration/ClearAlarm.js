@@ -8,9 +8,9 @@ const Acknowledgealarm = new AcknowledgeAlarmPage()
 const ClearAlarm = new ClearAlarmPage()
 Given('I click on Cleared Alarm Section Section of svb5 System Manager', function() {
     ActiveAlarm.getclickonalarm().click()
-    cy.wait(50000)
+    cy.wait(10000)
     ClearAlarm.getclickonclear().click()
-    cy.wait(15000)
+    cy.wait(25000)
 })
 When('I click Device AK-SM880A in Cleared Alarm', function() {
     ClearAlarm.getdevicename().click()
