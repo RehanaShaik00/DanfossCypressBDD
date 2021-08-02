@@ -1,0 +1,23 @@
+{
+  
+  "UserName":"Supervisor",
+  "Password":"S@danfoss123",
+  "HighTemp":"25.0",
+  "alarmdelay":"0",
+  "LowTemp":"-5.0",
+  "Month":"Feb",
+  "Year":"2011",
+  "servicetitle":"Service",
+  "infoTitle":"Info",
+  "page1":"Page 1",
+  "page2":"Page 2",
+  "page3":"Page 3",
+  "page4":"Page 4",
+  "page5":"Page 5",
+  "page6":"Page 6",
+  "page7":"Page 7",
+  "page8":"Page 8",
+  "page9":"Page 9",
+  "Alarmlevel":"Critical",
+  "AlarmAction":"1"
+}
