@@ -6,7 +6,8 @@ getclickonclear()
 }
 getdevicename()
 {
-    return cy.get(':nth-child(1) > .datatable-body-row > .datatable-row-center > [style="width: 122.429px; min-width: 120px; height: 33px;"]')
+   // return cy.get(':nth-child(1) > .datatable-body-row > .datatable-row-center > [style="width: 122.429px; min-width: 120px; height: 33px;"]')
+    return cy.get('#app-main > div > app-alarms > section > div > div > div > div > div.datatable-wrapper.ng-star-inserted > datatable > ngx-datatable > div > datatable-body > datatable-selection > datatable-scroller > datatable-row-wrapper:nth-child(1) > datatable-body-row > div.datatable-row-center.datatable-row-group.ng-star-inserted > datatable-body-cell:nth-child(2)')
 }
 getDescription()
 {
@@ -14,7 +15,9 @@ getDescription()
 }
 getPoint()
 {
-    return cy.get(':nth-child(1) > .datatable-body-row > .datatable-row-center > [style="width: 122.429px; min-width: 120px; height: 33px;"]')
+    return cy.get('#app-main > div > app-alarms > section > div > div > div > div > div.datatable-wrapper.ng-star-inserted > datatable > ngx-datatable > div > datatable-body > datatable-selection > datatable-scroller > datatable-row-wrapper:nth-child(1) > datatable-body-row > div.datatable-row-center.datatable-row-group.ng-star-inserted > datatable-body-cell:nth-child(2)')
+
+    //return cy.get(':nth-child(1) > .datatable-body-row > .datatable-row-center > [style="width: 122.429px; min-width: 120px; height: 33px;"]')
 }
 getAddress()
 {
