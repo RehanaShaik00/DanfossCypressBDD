@@ -18,5 +18,10 @@ steps:
 - script: |
     npm install
     npm run test
+  displayName: 'npm install and build'
+
+- script: |
+    npm install
     npm run test -- --browser chrome --headless
   displayName: 'npm install and build'
+
