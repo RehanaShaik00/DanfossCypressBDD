@@ -18,10 +18,12 @@ steps:
 - script: |
     npm install
     npm run test
-  displayName: 'npm install and build'
+  displayName: 'npm install and run tests'
 
 - script: |
-    npm install
     npm run test -- --browser chrome --headless
-  displayName: 'npm install and build'
+  displayName: 'run tests in chrome'
 
+- script: |
+    npm run test -- --browser firefox --headless
+  displayName: 'run tests in firefox'
