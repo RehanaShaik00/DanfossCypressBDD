@@ -21,9 +21,3 @@ steps:
     npm run test
   displayName: 'npm install and build'
 
-
-- task: PublishCucumberReport@1
-  displayName: 'Publish Cucumber Report'
-  inputs:
-    jsonDir: '$(System.DefaultWorkingDirectory)/cypress/cucumber-json'
-    outputPath: '$(System.DefaultWorkingDirectory) '
