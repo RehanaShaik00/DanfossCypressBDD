@@ -21,3 +21,10 @@ steps:
     npm run test -- --browser chrome --headless
   displayName: 'npm install and run test'
 
+- task: PublishTestResults@2
+  displayName: "Publish Test Results"
+  condition: always()
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-output-*.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
