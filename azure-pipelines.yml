@@ -25,8 +25,3 @@ steps:
   inputs:
     testResultsFiles: '**/test-output-*.xml '
 
- task:PublishCucumberReport@1
-  displayName: 'Publish Cucumber Report'
-  inputs:
-    jsonDir: './cypress/cucumber-json'
-    outputPath: './cypress/cucumber-json '
