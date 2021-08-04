@@ -24,3 +24,9 @@ steps:
   displayName: 'Publish Test Results **/test-output-*.xml '
   inputs:
     testResultsFiles: '**/test-output-*.xml '
+
+- task: PublishCucumberReport@1
+  displayName: 'Publish Cucumber Report'
+  inputs:
+    jsonDir: '$(System.DefaultWorkingDirectory)/_stepin105057_DanfossCypressBDD/cypress/cucumber-json'
+    outputPath: '$(System.DefaultWorkingDirectory)/_stepin105057_DanfossCypressBDD/cypress/cucumber-json'
