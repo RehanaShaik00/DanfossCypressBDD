@@ -28,5 +28,5 @@ steps:
 - task: PublishCucumberReport@1
   displayName: 'Publish Cucumber Report'
   inputs:
-    jsonDir: 'stepin105057/DanfossCypressBDD/cypress/cucumber-json'
-    outputPath: 'stepin105057/DanfossCypressBDD/cypress/cucumber-json'
+    jsonDir: '$(System.DefaultWorkingDirectory)/stepin105057/DanfossCypressBDD/cypress/cucumber-json'
+    outputPath: '$(System.DefaultWorkingDirectory)/stepin105057/DanfossCypressBDD/cypress/cucumber-json'
