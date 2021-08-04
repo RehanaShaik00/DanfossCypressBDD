@@ -1,5 +1,11 @@
 {
     "defaultCommandTimeout":25000,
     "testFiles": "**/*.feature",
-    "fixturesFolder":"cypress/integration/fixtures"
+    "fixturesFolder":"cypress/integration/fixtures",
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "tests/test-output-[hash].xml",
+        "toConsole": true,
+        "attachments": true
+    }
 }
