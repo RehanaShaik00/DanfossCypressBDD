@@ -36,8 +36,3 @@ steps:
     testResultsFiles: '**/test-output-*.xml'
     searchFolder: '$(System.DefaultWorkingDirectory)'
 
-- task: PublishCucumberReport@1
-  displayName: 'Publish Cucumber Report'
-  inputs:
-    jsonDir: '$(System.DefaultWorkingDirectory)/cypress/cucumber-json'
-    outputPath: '$(System.DefaultWorkingDirectory) '
