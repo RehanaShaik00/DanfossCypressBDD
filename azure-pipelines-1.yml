@@ -27,3 +27,11 @@ steps:
 - script: |
     npm run test -- --browser firefox --headless
   displayName: 'run tests in firefox'
+
+- task: PublishTestResults@2
+  displayName: "Publish Test Results"
+  condition: always()
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-output-*.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
