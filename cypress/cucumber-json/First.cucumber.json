@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Configuration",
+    "line": 1,
+    "id": "configuration",
+    "tags": [],
+    "uri": "First.feature",
+    "elements": [
+      {
+        "id": "configuration;set-alarm-range-and-generate-alarm",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Set Alarm Range And Generate Alarm",
+        "tags": [
+          {
+            "name": "@Configuration",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I click on Configuration Section of svb5 System Manager",
+            "result": {
+              "status": "passed",
+              "duration": 45633000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I navigate to Alarm in Configuration Section",
+            "result": {
+              "status": "passed",
+              "duration": 5296000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I navigate to Service in Alarm Section of Configuration",
+            "result": {
+              "status": "passed",
+              "duration": 5260000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I set Alarm Range as Critical",
+            "result": {
+              "status": "passed",
+              "duration": 946000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I generate the Test Alarm",
+            "result": {
+              "status": "passed",
+              "duration": 5252000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
